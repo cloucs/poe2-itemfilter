@@ -1,0 +1,139 @@
+#--------------------------
+# Gems
+#--------------------------
+
+Show
+BaseType "uncut" "prism" "gem"
+SetTextColor 20 240 240
+#SetBorderColor 20 240 240
+#PlayAlertSound 2 300
+PlayEffect Cyan
+MinimapIcon 1 Cyan Triangle
+
+#--------------------------
+# Gold
+#--------------------------
+
+Show
+StackSize >= 500
+BaseType == "Gold"
+PlayEffect Orange
+
+Show
+BaseType == "Gold"
+PlayEffect Orange Temp
+
+#--------------------------
+# Currency & Essence & Runes & Prisms
+#--------------------------
+
+Show
+BaseType "scroll" "orb" "shard" "essence" "scrap" "etcher" "bauble" "core" "rune"
+SetTextColor 20 240 240
+#SetBorderColor 20 240 240
+#PlayAlertSound 2 300
+MinimapIcon 1 Cyan Circle
+PlayEffect Cyan Temp
+
+#--------------------------
+# Maps / Waystones / Tablets
+#--------------------------
+
+Show
+Class "waystone" "tablet"
+SetBorderColor 0 255 0
+PlayEffect Green
+MinimapIcon 1 Green Circle
+
+#--------------------------
+# Armour & Evasion (merc specific)
+#--------------------------
+
+Show
+#BaseType "ringmail gauntlets" "doubled" "sabatons" "cowled helm" "brimmed helm" "shielded helm" "guarded helm" "visored helm" "crossbow" "scale mail" "explorer armour" "rogue armour" "cloaked mail" "vagabond armour" "chain mail"
+Class "helmet" "body armour" "gloves" "boots"
+BaseEvasion ! 0
+BaseArmour ! 0
+SetTextColor 119 0 255
+PlayEffect Purple
+MinimapIcon 1 Purple Circle
+
+#--------------------------
+# Crossbows
+#--------------------------
+
+Show
+BaseType "crossbow"
+SetTextColor 119 0 255
+PlayEffect Purple
+MinimapIcon 1 Purple Circle
+
+#--------------------------
+# Items with Sockets
+#--------------------------
+
+Show
+Sockets > 0
+SetBorderColor 255 0 0
+PlayEffect Red
+MinimapIcon 1 Red Circle
+
+#--------------------------
+# Items with Quality
+#--------------------------
+
+Show
+Quality > 0
+SetBorderColor 255 0 0
+PlayEffect Red
+MinimapIcon 1 Red Circle
+
+#--------------------------
+# Flasks
+#--------------------------
+
+Show
+Class "flasks"
+#SetTextColor 168 50 133
+SetBorderColor 168 50 133
+PlayEffect Pink
+MinimapIcon 1 Pink Circle
+
+#--------------------------
+# Jewels
+#--------------------------
+
+Show
+Class "jewel"
+SetTextColor 168 50 133
+PlayEffect Pink
+MinimapIcon 1 Pink Circle
+
+#--------------------------
+# Belts / Amulets / Charms / Rings
+#--------------------------
+
+Show
+Class "belts" "amulets" "charms" "rings"
+SetBorderColor 168 50 133
+PlayEffect Pink
+MinimapIcon 1 Pink Circle
+
+#--------------------------
+# Special Items (Ultimatum & Djinn Barya)
+#--------------------------
+
+Show
+Class "ultimatum" "trial"
+SetTextColor 0 255 0
+PlayEffect Green
+MinimapIcon 1 Green Circle
+
+#--------------------------
+# Rare Items
+#--------------------------
+
+Show
+Rarity = Rare
+PlayEffect Yellow
+MinimapIcon 1 Yellow Circle
