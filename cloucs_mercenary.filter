@@ -18,22 +18,46 @@ Show
 StackSize >= 500
 BaseType == "Gold"
 PlayEffect Orange
+MinimapIcon 1 Orange Pentagon
 
 Show
 BaseType == "Gold"
 PlayEffect Orange Temp
+MinimapIcon 1 Orange Pentagon
 
 #--------------------------
-# Currency & Essence & Runes & Prisms
+# Currency & Essence & Runes & Prisms & Delirium
 #--------------------------
 
 Show
-BaseType "scroll" "orb" "shard" "essence" "scrap" "etcher" "bauble" "core" "rune"
+BaseType "scroll" "orb" "shard" "essence" "scrap" "etcher" "bauble" "core" "rune" "distilled" "whetstone"
 SetTextColor 20 240 240
 #SetBorderColor 20 240 240
 #PlayAlertSound 2 300
 MinimapIcon 1 Cyan Circle
 PlayEffect Cyan Temp
+
+#--------------------------
+# Breach items
+#--------------------------
+
+Show
+BaseType "catalyst"
+SetBorderColor 168 50 133
+SetTextColor 168 50 133
+MinimapIcon 1 Pink Diamond
+PlayEffect Pink
+
+#--------------------------
+# Breach tablets
+#--------------------------
+
+Show
+BaseType "breach"
+SetBorderColor 0 255 0
+SetTextColor 168 50 133
+PlayEffect Green
+MinimapIcon 1 Green Diamond
 
 #--------------------------
 # Maps / Waystones / Tablets
@@ -96,7 +120,7 @@ Show
 Class "flasks"
 #SetTextColor 168 50 133
 SetBorderColor 168 50 133
-PlayEffect Pink
+#PlayEffect Pink
 MinimapIcon 1 Pink Circle
 
 #--------------------------
