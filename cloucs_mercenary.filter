@@ -1,4 +1,15 @@
 #--------------------------
+# Belts / Amulets / Charms / Rings
+#--------------------------
+
+Show
+Class "belts" "amulets" "charms" "rings"
+SetBorderColor 168 50 133
+PlayEffect Pink
+MinimapIcon 1 Pink Circle
+
+
+#--------------------------
 # Gems
 #--------------------------
 
@@ -26,11 +37,23 @@ PlayEffect Orange Temp
 MinimapIcon 1 Orange Pentagon
 
 #--------------------------
-# Currency & Essence & Runes & Prisms & Delirium
+# Omen
 #--------------------------
 
 Show
-BaseType "scroll" "orb" "shard" "essence" "scrap" "etcher" "bauble" "core" "rune" "distilled" "whetstone"
+Class "omen"
+SetTextColor 20 240 240
+#SetBorderColor 20 240 240
+#PlayAlertSound 2 300
+MinimapIcon 1 Cyan Circle
+PlayEffect Cyan Temp
+
+#--------------------------
+# Currency & Essences & Runes & Delirium & Fragments & Expedition & Omens & Soul Cores
+#--------------------------
+
+Show
+BaseType "scroll" "orb" "shard" "essence" "scrap" "etcher" "bauble" "core" "rune" "distilled" "whetstone" "fate" "fragment" "artifact" "coinage" "mirror" "simulacrum" "audience"
 SetTextColor 20 240 240
 #SetBorderColor 20 240 240
 #PlayAlertSound 2 300
@@ -130,16 +153,6 @@ MinimapIcon 1 Pink Circle
 Show
 Class "jewel"
 SetTextColor 168 50 133
-PlayEffect Pink
-MinimapIcon 1 Pink Circle
-
-#--------------------------
-# Belts / Amulets / Charms / Rings
-#--------------------------
-
-Show
-Class "belts" "amulets" "charms" "rings"
-SetBorderColor 168 50 133
 PlayEffect Pink
 MinimapIcon 1 Pink Circle
 
